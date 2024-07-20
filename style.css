@@ -84,3 +84,24 @@
     border-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+
+#howtoply{
+    font-family: pixel;
+    font-size: 80px;
+    color: white;
+    position: fixed;
+    top: 90px;
+    left: 650px;
+}
+
+#plypanel{
+    background-color: rgb(224, 191, 58);
+    width: 900px;
+    height: 150px;
+    position: fixed;
+    top: 150px;
+    left: 510px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
