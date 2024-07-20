@@ -1,0 +1,39 @@
+@font-face { font-family: pixel; src: url("Gameplay.ttf"); }
+
+#body{
+    background-color: rgb(13, 51, 108);
+}
+
+#title{
+    font-family: pixel;
+    font-size: 60px;
+    color: white;
+    position: fixed;
+    top: 160px;
+    left: 800px;
+}
+
+#cred{
+    font-family: pixel;
+    color: white;
+}
+
+#start{
+    font-family: pixel;
+    color: white;
+}
+
+#credits{
+    font-family: pixel;
+    color: white;
+}
+
+#titlepanel{
+    background-color: rgb(224, 191, 58);
+    width: 1200px;
+    height: 150px;
+    position: fixed;
+    top: 150px;
+    left: 300px;
+    border-radius: 15px;
+}
