@@ -6,34 +6,81 @@
 
 #title{
     font-family: pixel;
-    font-size: 60px;
+    font-size: 80px;
     color: white;
     position: fixed;
-    top: 160px;
-    left: 800px;
+    top: 90px;
+    left: 700px;
 }
 
 #cred{
     font-family: pixel;
     color: white;
+    position: fixed;
+    top: 250px;
+    left: 850px;
 }
 
 #start{
     font-family: pixel;
+    font-size: 60px;
     color: white;
+    background-color: rgb(224, 191, 58);
+    border: 2px solid rgb(224, 191, 58);
+    border-radius: 15px;
+    width: 400px;
+    height: 150px;
+    position: fixed;
+    top: 450px;
+    left: 760px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    transition: transform 0.3s;
+}
+
+#start:hover{
+    transform: translateY(-10px)
+    
 }
 
 #credits{
     font-family: pixel;
+    font-size: 60px;
     color: white;
+    background-color: rgb(224, 191, 58);
+    border: 2px solid rgb(224, 191, 58);
+    border-radius: 15px;
+    width: 400px;
+    height: 120px;
+    position: fixed;
+    top: 700px;
+    left: 760px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    transition: transform 0.3s;
+}
+
+#credits:hover{
+    transform: translateY(-10px)
 }
 
 #titlepanel{
     background-color: rgb(224, 191, 58);
-    width: 1200px;
+    width: 900px;
     height: 150px;
     position: fixed;
     top: 150px;
-    left: 300px;
+    left: 510px;
     border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
