@@ -91,8 +91,38 @@
     font-size: 80px;
     color: white;
     position: fixed;
-    top: 90px;
+    top: 50px;
     left: 650px;
+}
+
+#howply1{
+    font-family: pixel;
+    font-size: 40px;
+    color: white;
+    position: fixed;
+    top: 300px;
+    left: 100px;
+    margin-right: 100px;
+}
+
+#howply2{
+    font-family: pixel;
+    font-size: 40px;
+    color: white;
+    position: fixed;
+    top: 450px;
+    left: 100px;
+    margin-right: 100px;
+}
+
+#howply3{
+    font-family: pixel;
+    font-size: 40px;
+    color: rgb(224, 191, 58);
+    position: fixed;
+    top: 650px;
+    left: 100px;
+    margin-right: 100px;
 }
 
 #plypanel{
@@ -100,8 +130,34 @@
     width: 900px;
     height: 150px;
     position: fixed;
-    top: 150px;
+    top: 100px;
     left: 510px;
     border-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#letsgo{
+    font-family: pixel;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(224, 191, 58);
+    border: 2px solid rgb(224, 191, 58);
+    border-radius: 15px;
+    width: 400px;
+    height: 80px;
+    position: fixed;
+    top: 800px;
+    left: 760px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    transition: transform 0.3s;
+}
+
+#letsgo:hover{
+    transform: translateY(-10px)
 }
