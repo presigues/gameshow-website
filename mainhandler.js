@@ -45,3 +45,7 @@ switch(choice){
 
 console.log("THEME CHOSEN : " + title);
 }
+
+function topichandler(){
+
+}
