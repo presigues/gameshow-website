@@ -33,7 +33,7 @@ function topicgen(choice){
 switch(choice){
     case 1:
         title = "TECH";
-        question = getRandomInt(1, 1);
+        question = getRandomInt(1, 2);
         switch(question){
             case 1:
                 console.log("Which computer language is the most widely used?");
@@ -46,14 +46,18 @@ switch(choice){
             
                break;
                case 2:
+                console.log("Which tech buzzword is closely related to Artificial Intelligence (AI)?");
                 ques = "Which tech buzzword is closely related to Artificial Intelligence (AI)?";
+                document.getElementById("questiontitle").innerHTML = ques;
                 ans = "Machine Learning";
                 otherans1 = "Virtual Reality";
                 otherans2 = "Cryptocurrency";
                 otherans3 = "Augmented Reality";
                 break;
                 case 3:
+                    console.log("What kind of malware is designed to take advantage of a security hole before it is known?");
                     ques = "What kind of malware is designed to take advantage of a security hole before it is known?";
+                    document.getElementById("questiontitle").innerHTML = ques;
                     ans = "Zero-day exploit";
                     otherans1 = "Virus";
                     otherans2 = "Randomware";
@@ -135,18 +139,90 @@ function pos(otherans1, otherans2, otherans3, ans){
     }
     pos4 = getRandomInt(1, 4);
     while(pos4 == pos3 || pos4 == pos2 || pos4 == pos1){
-     
+    pos4 = getRandomInt(1, 4);
     }
 
     switch(pos1){
         case 1:
+            document.getElementById("ans1").innerHTML = ans;
             break;
             case 2:
+                document.getElementById("ans2").innerHTML = ans;
                 break;
                 case 3: 
+                document.getElementById("ans3").innerHTML = ans;
                 break;
                 case 4:
+                    document.getElementById("ans4").innerHTML = ans;
                     break;
+                  
 
+
+    }
+    switch(pos2){
+        case 1:
+            document.getElementById("ans1").innerHTML = otherans1;
+            break;
+            case 2:
+                document.getElementById("ans2").innerHTML = otherans1;
+                break;
+                case 3: 
+                document.getElementById("ans3").innerHTML = otherans1;
+                break;
+                case 4:
+                    document.getElementById("ans4").innerHTML = otherans1;
+                    break;
+                  
+                        
+
+    }
+    switch(pos3){
+        case 1:
+            document.getElementById("ans1").innerHTML = otherans2;
+            break;
+            case 2:
+                document.getElementById("ans2").innerHTML = otherans2;
+                break;
+                case 3: 
+                document.getElementById("ans3").innerHTML = otherans2;
+                break;
+                case 4:
+                    document.getElementById("ans4").innerHTML = otherans2;
+                    break;
+                
+                        
+
+    }
+    switch(pos4){
+        case 1:
+            document.getElementById("ans1").innerHTML = otherans3;
+            break;
+            case 2:
+                document.getElementById("ans2").innerHTML = otherans3;
+                break;
+                case 3: 
+                document.getElementById("ans3").innerHTML = otherans3;
+                break;
+                case 4:
+                    document.getElementById("ans4").innerHTML = otherans3;
+                    break;
+               
+                        
+
+    }
+}
+
+function correct(ans){
+    if (document.getElementById("ans1").innerHTML == ans){
+        document.getElementById("ans1").style.backgroundColor = "green";
+    }
+    if (document.getElementById("ans2").innerHTML == ans){
+        document.getElementById("ans2").style.backgroundColor = "green";
+    }
+    if (document.getElementById("ans3").innerHTML == ans){
+        document.getElementById("ans3").style.backgroundColor = "green";
+    }
+    if (document.getElementById("ans4").innerHTML == ans){
+        document.getElementById("ans4").style.backgroundColor = "green";
     }
 }
