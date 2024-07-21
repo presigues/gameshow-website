@@ -173,20 +173,50 @@ switch(choice){
                     otherans3 = "paper";
                    break;
                    case 8:
-                    ques = "Early photographers made their images on which of these materials?";
+                    ques = "Who was the teacher of Leonardo da Vinci?";
                     document.getElementById("questiontitle").innerHTML = ques;
-                    ans = "glass";
-                    otherans1 = "stone";
-                    otherans2 = "plastic";
-                    otherans3 = "paper";
+                    ans = "Andrea del Verrocchio";
+                    otherans1 = "Sandro Botticelli";
+                    otherans2 = "Raphael";
+                    otherans3 = "Giorgio Vasari";
                    break;
             }
             break;
             case 3: 
                 title = "MATH";
-                theme = 3;
+                question = getRandomInt(1, 8);
                 switch(question){
                     case 1:
+                        ques = "Can Pi be written as a fraction?";
+                        document.getElementById("questiontitle").innerHTML = ques;
+                        ans = "No";
+                        otherans1 = "Yes";
+                        otherans2 = "Maybe";
+                        otherans3 = "You mean Pie?";
+                    break;
+                    case 2:
+                        ques = "What does the Roman numeral “X” equal?";
+                        document.getElementById("questiontitle").innerHTML = ques;
+                        ans = "Ten";
+                        otherans1 = "Twenty";
+                        otherans2 = "One Hundred";
+                        otherans3 = "One";
+                    break;
+                    case 3:
+                        ques = "Does a convex shape curve inward or outward?";
+                        document.getElementById("questiontitle").innerHTML = ques;
+                        ans = "Outward";
+                        otherans1 = "Inward";
+                        otherans2 = "It Doesnt Curve";
+                        otherans3 = "Idk";
+                    break;
+                    case 4:
+                        ques = "How many seconds are in one day?";
+                        document.getElementById("questiontitle").innerHTML = ques;
+                        ans = "86,400 seconds";
+                        otherans1 = "101,303 seconds";
+                        otherans2 = "56,220 seconds";
+                        otherans3 = "20,896 seconds";
                     break;
                 }
                 break;
