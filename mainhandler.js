@@ -30,8 +30,8 @@ switch(choice){
         question = getRandomInt(1, 12);
         switch(question){
             case 1:
-                ques = "";
-                ans = "";
+                ques = "Which computer language is the most widely used?";
+                ans = "JavaScript";
                 otherans1 = getRandomInt(1, 24); // get wrong 1 
                 while(otherans1 == ques){
                 otherans1 = getRandomInt(1, 24);
@@ -49,27 +49,76 @@ switch(choice){
         case 2:
             title = "ART";
             theme = 2;
+            switch(question){
+                case 1:
+                    ques = "";
+                    ans = "";
+                    otherans1 = getRandomInt(1, 24); // get wrong 1 
+                    while(otherans1 == ques){
+                    otherans1 = getRandomInt(1, 24);
+                    }
+                    otherans2 = getRandomInt(1, 24); // get wrong 2
+                    while(otherans1 == otherans2 || otherans2 == ques){
+                        otherans2 = getRandomInt(1, 24);
+                    }
+                    otherans3 = getRandomInt(1, 24);
+                    while(otherans1 == otherans3 || otherans2 == otherans3 || otherans3 == ques){
+                        otherans2 = getRandomInt(1, 24);
+                    }
+            }
             break;
             case 3: 
                 title = "MATH";
                 theme = 3;
+                switch(question){
+                    case 1:
+                        ques = "";
+                        ans = "";
+                        otherans1 = getRandomInt(1, 24); // get wrong 1 
+                        while(otherans1 == ques){
+                        otherans1 = getRandomInt(1, 24);
+                        }
+                        otherans2 = getRandomInt(1, 24); // get wrong 2
+                        while(otherans1 == otherans2 || otherans2 == ques){
+                            otherans2 = getRandomInt(1, 24);
+                        }
+                        otherans3 = getRandomInt(1, 24);
+                        while(otherans1 == otherans3 || otherans2 == otherans3 || otherans3 == ques){
+                            otherans2 = getRandomInt(1, 24);
+                        }
+                }
                 break;
                 case 4:
                     title = "SCIENCE";
                     theme = 4;
+                    switch(question){
+                        case 1:
+                            ques = "";
+                            ans = "";
+                            otherans1 = getRandomInt(1, 24); // get wrong 1 
+                            while(otherans1 == ques){
+                            otherans1 = getRandomInt(1, 24);
+                            }
+                            otherans2 = getRandomInt(1, 24); // get wrong 2
+                            while(otherans1 == otherans2 || otherans2 == ques){
+                                otherans2 = getRandomInt(1, 24);
+                            }
+                            otherans3 = getRandomInt(1, 24);
+                            while(otherans1 == otherans3 || otherans2 == otherans3 || otherans3 == ques){
+                                otherans2 = getRandomInt(1, 24);
+                            }
+                    }
                     break;
 }
 
 console.log("THEME CHOSEN : " + title);
 }
 
-function topichandler(){
 
 
+function thelonglistofstuffireallydontwanttowrite(otherans1, otherans2, otherans3){
+    switch(otherans1){
+        case 1:
 
-}
-
-
-function thelonglistofstuffireallydontwanttowrite(){
-    
+    }
 }
