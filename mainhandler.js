@@ -114,7 +114,7 @@ switch(choice){
         break;
         case 2:
             title = "ART";
-            question = getRandomInt(1, 8)
+            question = getRandomInt(1, 8);
             switch(question){
                 case 1:
                     ques = "What type of painting depicts scenes from everyday life in a realistic manner?";
@@ -218,14 +218,108 @@ switch(choice){
                         otherans2 = "56,220 seconds";
                         otherans3 = "20,896 seconds";
                     break;
+                    case 5:
+                        ques = "What is bigger, 100, or 10 squared?";
+                        document.getElementById("questiontitle").innerHTML = ques;
+                        ans = "They are the same";
+                        otherans1 = "10";
+                        otherans2 = "100";
+                        otherans3 = "No Clue";
+                    break;
+                    case 6:
+                        ques = "When was the equal sign invented?";
+                        document.getElementById("questiontitle").innerHTML = ques;
+                        ans = "1557";
+                        otherans1 = "1830";
+                        otherans2 = "1690";
+                        otherans3 = "1258";
+                    break;
+                    case 7:
+                        ques = "What is the mathematical name for a pound sign (#)?";
+                        document.getElementById("questiontitle").innerHTML = ques;
+                        ans = "Octothorpe";
+                        otherans1 = "Pound";
+                        otherans2 = "Number";
+                        otherans3 = "Hashtag";
+                    break;
+                    case 8:
+                        ques = "What mathematical theory explains the randomness of nature?";
+                        document.getElementById("questiontitle").innerHTML = ques;
+                        ans = "The Butterfly Effect";
+                        otherans1 = "The Random Effect";
+                        otherans2 = "The Theory of Relativity ";
+                        otherans3 = "Atomic theory";
+                    break;
                 }
                 break;
                 case 4:
                     title = "SCIENCE";
-                    theme = 4;
+                    question = getRandomInt(1, 8);
                     switch(question){
                         case 1:
+                            ques = "The concept of gravity was discovered by which famous physicist?";
+                            document.getElementById("questiontitle").innerHTML = ques;
+                            ans = "Sir Issac Newton";
+                            otherans1 = "Albert Einstein";
+                            otherans2 = "Galileo Galilei";
+                            otherans3 = "Nikola Tesla";
                        break;
+                       case 2:
+                            ques = "Which is the most abundant element in the universe?";
+                            document.getElementById("questiontitle").innerHTML = ques;
+                            ans = "Hydrogen";
+                            otherans1 = "Nitrogen";
+                            otherans2 = "Carbon";
+                            otherans3 = "Oxygen";
+                       break;
+                       case 3:
+                            ques = "What is the hardest natural substance on Earth?";
+                            document.getElementById("questiontitle").innerHTML = ques;
+                            ans = "Diamond";
+                            otherans1 = "Quartz";
+                            otherans2 = "Iron";
+                            otherans3 = "Gold";
+                       break;
+                       case 4:
+                            ques = "Which freezes faster, hot water or cold water?";
+                            document.getElementById("questiontitle").innerHTML = ques;
+                            ans = "Hot water";
+                            otherans1 = "Cold water";
+                            otherans2 = "They freeze at the same time";
+                            otherans3 = "It depends on the container";
+                       break;
+                       case 5:
+                        ques = "What is the only rock that floats?";
+                        document.getElementById("questiontitle").innerHTML = ques;
+                        ans = "Pumice";
+                        otherans1 = "Basalt";
+                        otherans2 = "Granite";
+                        otherans3 = "Limestone";
+                   break;
+                   case 6:
+                    ques = "How many bones do sharks have in their bodies?";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "0";
+                    otherans1 = "206";
+                    otherans2 = "108";
+                    otherans3 = "56";
+               break;
+               case 7:
+                    ques = "From which body part does the majority of your body heat escape?";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "Evenly throughout the body";
+                    otherans1 = "Head";
+                    otherans2 = "Hands";
+                    otherans3 = "Feet";
+               break;
+               case 8:
+                    ques = "How many senses do humans have?";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "9 or more";
+                    otherans1 = "5";
+                    otherans2 = "6";
+                    otherans3 = "4";
+               break;
                     }
                     break;
 }
