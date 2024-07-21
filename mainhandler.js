@@ -114,9 +114,71 @@ switch(choice){
         break;
         case 2:
             title = "ART";
-            theme = 2;
+            question = getRandomInt(1, 8)
             switch(question){
                 case 1:
+                    ques = "What type of painting depicts scenes from everyday life in a realistic manner?";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "Genre painting";
+                    otherans1 = "Deccani painting";
+                    otherans2 = "Metaphysical painting";
+                    otherans3 = "Bark painting";
+                   break;
+                   case 2:
+                    ques = "Which of these art forms is practiced primarily in East Asia?";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "Scroll Painting";
+                    otherans1 = "Landscape Painting";
+                    otherans2 = "Sfumato";
+                    otherans3 = "Panel Painting";
+                   break;
+                   case 3:
+                    ques = "Name the type of sculpture that represents a person dying or in death.";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "Gisant";
+                    otherans1 = "Figurehead";
+                    otherans2 = "Kouros";
+                    otherans3 = "Acrolith";
+                   break;
+                   case 4:
+                    ques = "Name the church where Leonardo da Vinci''s famous fresco the Last Supper is painted.";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "Santa Maria delle Grazie";
+                    otherans1 = "San Nazaro in Brolo";
+                    otherans2 = "Duomo di Milano";
+                    otherans3 = "Basilica di Sant''Ambrogio";
+                   break;
+                   case 5:
+                    ques = "What was the subject of the earliest known paintings?";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "animals";
+                    otherans1 = "sports";
+                    otherans2 = "flowers";
+                    otherans3 = "landscapes";
+                   break;
+                   case 6:
+                    ques = "Name the type of painting technique done by mixing pigments with hot liquid wax.";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "Encaustic painting";
+                    otherans1 = "Tempera painting";
+                    otherans2 = "Casein painting";
+                    otherans3 = "Acrylic painting";
+                   break;
+                   case 7:
+                    ques = "Early photographers made their images on which of these materials?";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "glass";
+                    otherans1 = "stone";
+                    otherans2 = "plastic";
+                    otherans3 = "paper";
+                   break;
+                   case 8:
+                    ques = "Early photographers made their images on which of these materials?";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "glass";
+                    otherans1 = "stone";
+                    otherans2 = "plastic";
+                    otherans3 = "paper";
                    break;
             }
             break;
