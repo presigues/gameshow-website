@@ -33,7 +33,7 @@ function topicgen(choice){
 switch(choice){
     case 1:
         title = "TECH";
-        question = getRandomInt(1, 2);
+        question = getRandomInt(1, 8);
         switch(question){
             case 1:
                 console.log("Which computer language is the most widely used?");
@@ -63,6 +63,51 @@ switch(choice){
                     otherans2 = "Randomware";
                     otherans3 = "Augmented Reality";
                     break;
+                    case 4:
+                        console.log("Which of these is an example of an integrated circuit?");
+                    ques = "Who founded Apple Computer?";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "Steve Jobs";
+                    otherans1 = "Bill Gates";
+                    otherans2 = "Sundar Pichai";
+                    otherans3 = "Sheryl Sandberg";
+                    break;
+                    case 5:
+                        console.log("Which of these is an example of an integrated circuit?");
+                    ques = "Computer trojans are an example of:";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "Malware";
+                    otherans1 = "Spyware";
+                    otherans2 = "Computer Worms";
+                    otherans3 = "Network Security Devices";
+                    break;
+                    case 6:
+                        console.log("Which of these is an example of an integrated circuit?");
+                    ques = "What type of electromagnetic waves does Wi-Fi use?";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "Radio Waves";
+                    otherans1 = "Gamma Rays";
+                    otherans2 = "Infrared Waves";
+                    otherans3 = "Microwaves";
+                    break;
+                    case 7:
+                        console.log("Which of these is an example of an integrated circuit?");
+                    ques = "Who coined the term artificial intelligence?";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "John McCarthy";
+                    otherans1 = "Herbert A. Simon";
+                    otherans2 = "Donald Ervin Knuth";
+                    otherans3 = "Charles Bachman";
+                    break;
+                    case 8:
+                        console.log("Which of these is an example of an integrated circuit?");
+                    ques = "In the 1990s, this company created a computer programming language called Java:";
+                    document.getElementById("questiontitle").innerHTML = ques;
+                    ans = "Sun Microsystems, Inc.";
+                    otherans1 = "Oracle Corporation";
+                    otherans2 = "IBM";
+                    otherans3 = "Microsoft Corporation";
+                    break;
 
         }
 
@@ -72,11 +117,7 @@ switch(choice){
             theme = 2;
             switch(question){
                 case 1:
-                    ques = "Which tech buzzword is closely related to Artificial Intelligence (AI)?";
-                    ans = "Machine Learning";
-                    otherans1 = "Virtual Reality";
-                    otherans2 = "Cryptocurrency";
-                    otherans3 = "Augmented Reality";
+                   break;
             }
             break;
             case 3: 
@@ -84,20 +125,7 @@ switch(choice){
                 theme = 3;
                 switch(question){
                     case 1:
-                        ques = "";
-                        ans = "";
-                        otherans1 = getRandomInt(1, 24); // get wrong 1 
-                        while(otherans1 == ques){
-                        otherans1 = getRandomInt(1, 24);
-                        }
-                        otherans2 = getRandomInt(1, 24); // get wrong 2
-                        while(otherans1 == otherans2 || otherans2 == ques){
-                            otherans2 = getRandomInt(1, 24);
-                        }
-                        otherans3 = getRandomInt(1, 24);
-                        while(otherans1 == otherans3 || otherans2 == otherans3 || otherans3 == ques){
-                            otherans2 = getRandomInt(1, 24);
-                        }
+                    break;
                 }
                 break;
                 case 4:
@@ -105,20 +133,7 @@ switch(choice){
                     theme = 4;
                     switch(question){
                         case 1:
-                            ques = "";
-                            ans = "";
-                            otherans1 = getRandomInt(1, 24); // get wrong 1 
-                            while(otherans1 == ques){
-                            otherans1 = getRandomInt(1, 24);
-                            }
-                            otherans2 = getRandomInt(1, 24); // get wrong 2
-                            while(otherans1 == otherans2 || otherans2 == ques){
-                                otherans2 = getRandomInt(1, 24);
-                            }
-                            otherans3 = getRandomInt(1, 24);
-                            while(otherans1 == otherans3 || otherans2 == otherans3 || otherans3 == ques){
-                                otherans2 = getRandomInt(1, 24);
-                            }
+                       break;
                     }
                     break;
 }
@@ -212,17 +227,35 @@ function pos(otherans1, otherans2, otherans3, ans){
     }
 }
 
-function correct(ans){
+function correct1(ans){
     if (document.getElementById("ans1").innerHTML == ans){
         document.getElementById("ans1").style.backgroundColor = "green";
+        document.getElementById("ans1").style.borderColor = "green";
+        
     }
+ 
+}
+function correct2(ans){
     if (document.getElementById("ans2").innerHTML == ans){
         document.getElementById("ans2").style.backgroundColor = "green";
+        document.getElementById("ans2").style.borderColor = "green";
+  
     }
+ 
+}
+function correct3(ans){
     if (document.getElementById("ans3").innerHTML == ans){
         document.getElementById("ans3").style.backgroundColor = "green";
+        document.getElementById("ans3").style.borderColor = "green";
+       
     }
+ 
+}
+function correct4(ans){
     if (document.getElementById("ans4").innerHTML == ans){
         document.getElementById("ans4").style.backgroundColor = "green";
+        document.getElementById("ans4").style.borderColor = "green";
+        
     }
+ 
 }
