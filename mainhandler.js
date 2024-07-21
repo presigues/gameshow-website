@@ -27,7 +27,24 @@ function topicgen(choice){
 switch(choice){
     case 1:
         title = "TECH";
-        theme = 1;
+        question = getRandomInt(1, 12);
+        switch(question){
+            case 1:
+                ques = "";
+                ans = "";
+                otherans1 = getRandomInt(1, 24); // get wrong 1 
+                while(otherans1 == ques){
+                otherans1 = getRandomInt(1, 24);
+                }
+                otherans2 = getRandomInt(1, 24); // get wrong 2
+                while(otherans1 == otherans2 || otherans2 == ques){
+                    otherans2 = getRandomInt(1, 24);
+                }
+                otherans3 = getRandomInt(1, 24);
+                while(otherans1 == otherans3 || otherans2 == otherans3 || otherans3 == ques){
+                    otherans2 = getRandomInt(1, 24);
+                }
+        }
         break;
         case 2:
             title = "ART";
@@ -48,4 +65,11 @@ console.log("THEME CHOSEN : " + title);
 
 function topichandler(){
 
+
+
+}
+
+
+function thelonglistofstuffireallydontwanttowrite(){
+    
 }
