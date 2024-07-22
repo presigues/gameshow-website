@@ -2,7 +2,13 @@ function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-var audio = new Audio('medium-text-blip-14855.mp3');
+var audio = new Audio('medium-text-blip-14855.mp3'); // audio message sound effect
+
+// add win audio
+
+// add lose audio
+
+// add other stuff
 
 async function alldialogcuzimcrazy(){
     audio.play();
@@ -29,6 +35,15 @@ async function alldialogcuzimcrazy(){
     await delay(1000);
     document.getElementById("alldialog").style.display = "none";
     document.getElementById("choiceframe").style.display = "block";
+
+}
+
+
+async function playerdialog(){
+
+}
+
+async function botdialog(){
 
 }
 
