@@ -431,9 +431,11 @@ async function correct1(ans){
         document.getElementById("score").innerHTML = "SCORE : " + plrscore;
         win.play();
         await delay(2000);
+        
         document.getElementById("questionframe").style.display = "none";
         document.getElementById("choiceframe").style.display = "block";
         resetall();
+        winner();
         
     }
  
@@ -446,10 +448,11 @@ async function correct2(ans){
         document.getElementById("score").innerHTML = "SCORE : " + plrscore;
         win.play();
         await delay(2000);
+        
         document.getElementById("questionframe").style.display = "none";
         document.getElementById("choiceframe").style.display = "block";
         resetall();
-  
+  winner();
     }
  
 }
@@ -461,10 +464,11 @@ async function correct3(ans){
         document.getElementById("score").innerHTML = "SCORE : " + plrscore;
         win.play();
         await delay(2000);
+       
         document.getElementById("questionframe").style.display = "none";
         document.getElementById("choiceframe").style.display = "block";
         resetall();
-       
+        winner();
     }
  
 }
@@ -476,10 +480,11 @@ async function correct4(ans){
         document.getElementById("score").innerHTML = "SCORE : " + plrscore;
         win.play();
         await delay(2000);
+      
         document.getElementById("questionframe").style.display = "none";
         document.getElementById("choiceframe").style.display = "block";
         resetall();
-        
+         winner(); 
     }
  
 }
@@ -490,6 +495,7 @@ async function wrong1(ans){
         document.getElementById("ans1").style.borderColor = "red";
         lose.play(); 
         await delay(2000);
+        winner();
         document.getElementById("questionframe").style.display = "none";
         document.getElementById("choiceframe").style.display = "block";
         resetall();
@@ -502,6 +508,7 @@ async function wrong2(ans){
         document.getElementById("ans2").style.borderColor = "red";
         lose.play();
         await delay(2000);
+        winner();
         document.getElementById("questionframe").style.display = "none";
         document.getElementById("choiceframe").style.display = "block";
         resetall();
@@ -514,6 +521,7 @@ async function wrong3(ans){
         document.getElementById("ans3").style.borderColor = "red";
         lose.play();
         await delay(2000);
+        winner();
         document.getElementById("questionframe").style.display = "none";
         document.getElementById("choiceframe").style.display = "block";
         resetall();
@@ -526,6 +534,7 @@ async function wrong4(ans){
         document.getElementById("ans4").style.borderColor = "red";
         lose.play();
         await delay(2000);
+        winner();
         document.getElementById("questionframe").style.display = "none";
         document.getElementById("choiceframe").style.display = "block";
         resetall();
