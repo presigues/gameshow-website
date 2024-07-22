@@ -264,3 +264,14 @@
     position: fixed;
     left: 900px;
 }
+
+#dia2{
+    display: none;
+    position: fixed;
+    left: 900px;
+}
+#bot{
+    position: fixed;
+    left: 850px;
+    top: 140px;
+}
