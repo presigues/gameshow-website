@@ -3,6 +3,10 @@
     background-color: rgb(13, 51, 108);
 }
 
+#choiceframe{
+    display: none;
+}
+
 #choice1{
     font-family: pixel;
     font-size: 40px;
@@ -253,4 +257,10 @@
 
 #ans1:hover{
     transform: translateY(-10px)
+}
+
+#dia1{
+    display: block;
+    position: fixed;
+    left: 900px;
 }
