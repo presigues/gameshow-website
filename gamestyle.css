@@ -270,8 +270,22 @@
     position: fixed;
     left: 900px;
 }
+#dia3{
+    display: none;
+    position: fixed;
+    left: 980px;
+}
+#dia4{
+    display: none;
+    position: fixed;
+    left: 900px;
+}
 #bot{
     position: fixed;
     left: 850px;
     top: 140px;
+}
+
+#alldialog{
+    display: block;
 }
