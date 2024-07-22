@@ -39,12 +39,5 @@ async function alldialogcuzimcrazy(){
 }
 
 
-async function playerdialog(){
-
-}
-
-async function botdialog(){
-
-}
 
 alldialogcuzimcrazy();
