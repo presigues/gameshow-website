@@ -4,6 +4,9 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
+plrscore = 0;
+botscore = 0;
+
 
 
 function pick1(){
@@ -417,6 +420,7 @@ function correct1(ans){
     if (document.getElementById("ans1").innerHTML == ans){
         document.getElementById("ans1").style.backgroundColor = "green";
         document.getElementById("ans1").style.borderColor = "green";
+        plrscore = plrscore +10;
         
     }
  
@@ -425,6 +429,7 @@ function correct2(ans){
     if (document.getElementById("ans2").innerHTML == ans){
         document.getElementById("ans2").style.backgroundColor = "green";
         document.getElementById("ans2").style.borderColor = "green";
+        plrscore = plrscore +10;
   
     }
  
@@ -433,6 +438,7 @@ function correct3(ans){
     if (document.getElementById("ans3").innerHTML == ans){
         document.getElementById("ans3").style.backgroundColor = "green";
         document.getElementById("ans3").style.borderColor = "green";
+        plrscore = plrscore +10;
        
     }
  
@@ -441,7 +447,40 @@ function correct4(ans){
     if (document.getElementById("ans4").innerHTML == ans){
         document.getElementById("ans4").style.backgroundColor = "green";
         document.getElementById("ans4").style.borderColor = "green";
+        plrscore = plrscore +10;
         
     }
  
+}
+
+function wrong1(ans){
+    if (document.getElementById("ans1").innerHTML != ans){
+        document.getElementById("ans1").style.backgroundColor = "red";
+        document.getElementById("ans1").style.borderColor = "red";
+}
+}
+
+function wrong2(ans){
+    if (document.getElementById("ans2").innerHTML != ans){
+        document.getElementById("ans2").style.backgroundColor = "red";
+        document.getElementById("ans2").style.borderColor = "red";
+}
+}
+
+function wrong3(ans){
+    if (document.getElementById("ans3").innerHTML != ans){
+        document.getElementById("ans3").style.backgroundColor = "red";
+        document.getElementById("ans3").style.borderColor = "red";
+}
+}
+
+function wrong4(ans){
+    if (document.getElementById("ans4").innerHTML != ans){
+        document.getElementById("ans4").style.backgroundColor = "red";
+        document.getElementById("ans4").style.borderColor = "red";
+}
+}
+
+function disable(){
+    document.getElementById("ans1").setAttribute("enabled", "true");
 }
