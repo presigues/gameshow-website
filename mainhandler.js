@@ -482,5 +482,8 @@ function wrong4(ans){
 }
 
 function disable(){
-    document.getElementById("ans1").setAttribute("enabled", "true");
+    document.getElementById("ans1").disabled = true;
+    document.getElementById("ans2").disabled = true;
+    document.getElementById("ans3").disabled = true;
+    document.getElementById("ans4").disabled = true;
 }
