@@ -4,7 +4,8 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
-
+  var win = new Audio('mixkit-positive-notification-951.wav');
+  var lose = new Audio('mixkit-wrong-answer-fail-notification-946.wav');
 
 plrscore = 0;
 botscore = 0;
@@ -418,68 +419,112 @@ function pos(otherans1, otherans2, otherans3, ans){
     }
 }
 
-function correct1(ans){
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function correct1(ans){
     if (document.getElementById("ans1").innerHTML == ans){
         document.getElementById("ans1").style.backgroundColor = "green";
         document.getElementById("ans1").style.borderColor = "green";
         plrscore = plrscore +10;
+        win.play();
+        await delay(5000);
+        document.getElementById("questionframe").style.display = "none";
+        document.getElementById("alldialog").style.display = "block";
+        resetall();
         
     }
  
 }
-function correct2(ans){
+async function correct2(ans){
     if (document.getElementById("ans2").innerHTML == ans){
         document.getElementById("ans2").style.backgroundColor = "green";
         document.getElementById("ans2").style.borderColor = "green";
         plrscore = plrscore +10;
+        win.play();
+        await delay(5000);
+        document.getElementById("questionframe").style.display = "none";
+        document.getElementById("alldialog").style.display = "block";
+        resetall();
   
     }
  
 }
-function correct3(ans){
+async function correct3(ans){
     if (document.getElementById("ans3").innerHTML == ans){
         document.getElementById("ans3").style.backgroundColor = "green";
         document.getElementById("ans3").style.borderColor = "green";
         plrscore = plrscore +10;
+        win.play();
+        await delay(5000);
+        document.getElementById("questionframe").style.display = "none";
+        document.getElementById("alldialog").style.display = "block";
+        resetall();
        
     }
  
 }
-function correct4(ans){
+async function correct4(ans){
     if (document.getElementById("ans4").innerHTML == ans){
         document.getElementById("ans4").style.backgroundColor = "green";
         document.getElementById("ans4").style.borderColor = "green";
         plrscore = plrscore +10;
+        win.play();
+        await delay(5000);
+        document.getElementById("questionframe").style.display = "none";
+        document.getElementById("alldialog").style.display = "block";
+        resetall();
         
     }
  
 }
 
-function wrong1(ans){
+async function wrong1(ans){
     if (document.getElementById("ans1").innerHTML != ans){
         document.getElementById("ans1").style.backgroundColor = "red";
         document.getElementById("ans1").style.borderColor = "red";
+        lose.play(); 
+        await delay(5000);
+        document.getElementById("questionframe").style.display = "none";
+        document.getElementById("alldialog").style.display = "block";
+        resetall();
 }
 }
 
-function wrong2(ans){
+async function wrong2(ans){
     if (document.getElementById("ans2").innerHTML != ans){
         document.getElementById("ans2").style.backgroundColor = "red";
         document.getElementById("ans2").style.borderColor = "red";
+        lose.play();
+        await delay(5000);
+        document.getElementById("questionframe").style.display = "none";
+        document.getElementById("alldialog").style.display = "block";
+        resetall();
 }
 }
 
-function wrong3(ans){
+async function wrong3(ans){
     if (document.getElementById("ans3").innerHTML != ans){
         document.getElementById("ans3").style.backgroundColor = "red";
         document.getElementById("ans3").style.borderColor = "red";
+        lose.play();
+        await delay(5000);
+        document.getElementById("questionframe").style.display = "none";
+        document.getElementById("alldialog").style.display = "block";
+        resetall();
 }
 }
 
-function wrong4(ans){
+async function wrong4(ans){
     if (document.getElementById("ans4").innerHTML != ans){
         document.getElementById("ans4").style.backgroundColor = "red";
         document.getElementById("ans4").style.borderColor = "red";
+        lose.play();
+        await delay(5000);
+        document.getElementById("questionframe").style.display = "none";
+        document.getElementById("alldialog").style.display = "block";
+        resetall();
 }
 }
 
@@ -488,4 +533,19 @@ function disable(){
     document.getElementById("ans2").disabled = true;
     document.getElementById("ans3").disabled = true;
     document.getElementById("ans4").disabled = true;
+}
+
+function resetall(){
+    document.getElementById("ans1").style.backgroundColor = "rgb(224, 191, 58)";
+    document.getElementById("ans1").style.borderColor = "rgb(224, 191, 58)";
+    document.getElementById("ans2").style.backgroundColor = "rgb(224, 191, 58)";
+    document.getElementById("ans2").style.borderColor = "rgb(224, 191, 58)";
+    document.getElementById("ans3").style.backgroundColor = "rgb(224, 191, 58)";
+    document.getElementById("ans3").style.borderColor = "rgb(224, 191, 58)";
+    document.getElementById("ans4").style.backgroundColor = "rgb(224, 191, 58)";
+    document.getElementById("ans4").style.borderColor = "rgb(224, 191, 58)";
+    document.getElementById("ans1").disabled = false;
+    document.getElementById("ans2").disabled = false;
+    document.getElementById("ans3").disabled = false;
+    document.getElementById("ans4").disabled = false;
 }
