@@ -10,4 +10,16 @@ and or you can click credits to be redirected to my github
 
 i hope you enjoy!
 
+**self hosting instructions**
+
+1 download all files
+
+2 create a project folder named whatever you want to put all the files in
+
+3 make a folder in the project folder and call it "dialog" 
+
+4 put all the image files in the "dialog" folder 
+
+5 use live server and click "go live" while viewing the "main.html" file
+
 
